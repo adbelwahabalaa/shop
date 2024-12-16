@@ -1,27 +1,43 @@
-# Shop
+shop-app
+this is a simple shop app with a few products and some details for each product
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+Shop App - Angular A simple Angular app for browsing products in a shop with features like sorting, filtering, and product detail view. This app is built using Angular and simulates API calls to fetch the product list.
 
-## Development server
+Features:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Display a list of products with images, names, prices, and descriptions.
+- Sort products by name or price.
+- Filter products by name.
+- View detailed information about each product
+ 
+Prerequisites:
 
-## Code scaffolding
+- Before getting started, ensure you have the following installed on your machine:
+Node.js: Download and install from nodejs.org.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular CLI: Install globally by running the following command in your terminal:
+npm install -g @angular/cli
 
-## Build
+Clone the Repository:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Clone the repository to your local machine using Git:
 
-## Running unit tests
+- open your terminal and run command : git clone https://github.com/adbelwahabalaa/shop-app.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Navigate into the project directory: cd shop-app
 
-## Running end-to-end tests
+Project Structure:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- src/app: Contains the core components, services, and routing configuration.
+- product-list: Displays the list of products with sorting and filtering options.
+- product-description: Displays detailed information for each product.
+- product.service.ts: A service to simulate fetching product data.
+- src/assets/products.json: A static JSON file containing product data for the mock API.
+- 
+Install Dependencies:
 
-## Further help
+- Run the following command to install the necessary dependencies for the project: npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Run the Application: Once the dependencies are installed, you can run the app locally by using the Angular CLI: ng serve
+
+By default, the application will be available at http://localhost:4200.
