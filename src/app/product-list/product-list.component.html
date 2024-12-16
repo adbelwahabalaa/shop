@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="header">
+        <h1>Shop App</h1>
+        <p>this is our simple shopping portal for all kinds of Electronics and their Accessories</p>
+      </div>
+    <div class="filter-sort-container">
+      <input
+        type="text"
+        [(ngModel)]="searchTerm"
+        (ngModelChange)="onSearchChange()"
+        placeholder="Search by name"
+      />
+      <select [(ngModel)]="sortBy" (ngModelChange)="onSortChange()">
+        <option value="name">Sort by Name</option>
+        <option value="price">Sort by Price</option>
+      </select>
+    </div>
+  
+    <div class="product-list">
+      <div *ngFor="let product of filteredProducts" class="product-card">
+        <img [src]="product.image" alt="{{ product.name }}" />
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p><strong>${{ product.price }}</strong></p>
+        <button (click)="viewProductDetails(product.id)">View Details</button>
+      </div>
+    </div>
+  </div>
+  

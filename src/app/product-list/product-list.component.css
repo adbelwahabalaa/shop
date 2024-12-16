@@ -1,0 +1,111 @@
+/* Product List Styles */
+h1{text-align: center;
+  margin: 3rem;}
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #0C4A60;
+    color: white;
+    font-size: 30px;
+  }
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .product-card {
+    background-color: white ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .product-card button {
+    margin-top: 10px;
+  }
+  
+  .filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .filter-sort-container input,
+  .filter-sort-container select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 48%;
+  }
+  
+  .filter-sort-container input:focus,
+  .filter-sort-container select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+/* Product List Styles */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-sort-container {
+      flex-direction: column;
+    }
+    .filter-sort-container input,
+    .filter-sort-container select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Product Description Styles */
+  .product-description {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .product-description {
+      padding: 20px;
+      max-width: 100%;
+    }
+    .product-description img {
+      width: 100%;
+    }
+  }
+    
