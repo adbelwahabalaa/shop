@@ -22,7 +22,7 @@ Clone the Repository:
 
 - Clone the repository to your local machine using Git:
 
-- open your terminal and run command : git clone https://github.com/adbelwahabalaa/shop-app.git
+- open your terminal and run command : git clone https://github.com/adbelwahabalaa/shop.git
 
 - Navigate into the project directory: cd shop-app
 
